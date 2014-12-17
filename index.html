@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Diario de viajes</title>
+		<meta name="description" content="A simple but really powerful slider that does what a slider has to do: slide slides.">
+		<!-- Include demo stylesheet -->
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+		<!-- Get jQuery from CDN -->
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<!-- Include the slider scripts -->
+		<script type="text/javascript" src="js/transit.js"></script>
+		<script type="text/javascript" src="js/jquery.simpleslider.js"></script>
+		<script type="text/javascript" src="js/backstretch.js"></script>
+		<script type="text/javascript" src="js/custom.js"></script>
+
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/nl_NL/all.js#xfbml=1&appId=462401843842149";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+
+		<header id="top">
+			<!--<div id="logo"><span class='logo'></span><span class='dynamic'></span></div>-->
+		</header>
+
+
+		<div class='pagewrap'>
+			<!--<div class="fb-like" data-href="https://github.com/dirkgroenen/simple-jQuery-slider" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div>
+
+			<div class="githubbuttons">
+				<iframe src="http://ghbtns.com/github-btn.html?user=dirkgroenen&repo=simple-jQuery-slider&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="80" height="20"></iframe>
+				<iframe src="http://ghbtns.com/github-btn.html?user=dirkgroenen&repo=simple-jQuery-slider&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="85" height="20"></iframe>
+				<iframe src="http://ghbtns.com/github-btn.html?user=dirkgroenen&repo=simple-jQuery-slider&type=follow" allowtransparency="true" frameborder="0" scrolling="0" width="145" height="20"></iframe>
+			</div>-->
+
+			<div class='pageblock' id='fullscreen'>
+				<div class='slider'>
+					<div class='slide' id="first">
+						<div class='slidecontent'>
+							<span class="headersur">Comparte experiencias</span>
+							<h1>DIARIO DE VIAJES</h1>
+							<div class="button" onclick="mainslider.nextSlide();">¿Quieres saber más?</div>
+						</div>
+					</div>
+					<div class='slide' id="sec">
+						<div class='slidecontent'>
+							<span class="headersur">Muevete y comenta tus aventuras</span>
+							<h1>VIVE</h1>
+							<div class="text">
+								<p>Relata tus experiencias en nuestra red social y haz que disfrute más gente valorando otros diarios</p>
+
+								<div class="presentacionimagenes">
+										<img src="images/caminoloco.jpeg"></img>
+								</div>
+								<div class="button" onclick="mainslider.nextSlide();">Animate a explorar</div>
+							</div>
+						</div>
+					</div>
+					<div class='slide' id="thirth">
+						<div class='slidecontent'>
+							<span class="headersur">Hora de empezar a compartir</span>
+							<h1>SOCIALIZA</h1>
+							<div class="text">
+								<p>Opina y valora rutas y vivencias</p>
+								<div class="presentacionimagenes">
+										<img src="images/caminoloco.jpeg"></img>
+								</div>
+								<div class="button" onclick="mainslider.nextSlide();">Sigue moviendote!</div>
+							</div>
+						</div>
+					</div>
+					<div class='slide' id="fourth">
+						<div class='slidecontent'>
+							<span class="headersur">¿Estres? ¿Ganas de desconectar?</span>
+							<h1>SAL DE TU CUEVA</h1>
+							<div class="text">
+								<p>Vive comparte y experimenta nuevas sensaciones</p>
+								<p>No encontraras nada igual en toda la nube<br/>Viajes, amigos y mucho más! </p>
+
+								<div class="button"><a href="" target="_BLANK">Registrate</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copy">
+				Un proyecto de: <a href="https://github.com/Deathdance" rel="publisher">Gorka</a> | <a href="https://github.com/apao87" rel="publisher">Josu</a> | <a href="https://github.com/xarrondo" rel="publisher">Xabi</a>
+			</div>
+		</div>
+
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-45574670-2', 'bitlabsbeta.nl');
+		  ga('send', 'pageview');
+		</script>
+	</body>
+</html>

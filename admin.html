@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/admin.css" />
+        <script type="text/javascript" src="http://jquery.com/src/jquery-latest.js"></script>
+        <script type="text/javascript" src="inc/jquery.hoverIntent.min.js"></script>
+        <script type="text/javascript" src="inc/jquery.metadata.js"></script>
+        <script type="text/javascript" src="inc/jquery.mb.flipV.cryp.js"></script>
+        <scritp type="text/javascript" src="inc/mbExtruder.js"></script>
+        <script type="text/javascript">
+          $(function(){
+            $("#extruderLeft").buildMbExtruder({
+                    position:"left",
+                    width:600,
+                    extruderOpacity:.8,
+    
+                    hidePanelsOnClose:false,
+                    accordionPanels:false,
+                    onExtOpen:function(){},
+                    onExtContentLoad:function(){$("#extruderLeft").openPanel();},
+                    onExtClose:function(){}
+                });
+          });
+      </script>
+    </head>
+    <body>
+        Hola
+        <div id="extruderLeft" class="{title:'Home'}"></div>
+        sñdfkjghsfhjo`h
+    </body>
+</html>
