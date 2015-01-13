@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head id="head">
+		<meta charset="utf-8">
+		<title>Pyrenoise - Alojamiento</title>
+		
+	    <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/footer.css">
+        
+        <script type="text/javascript">
+       
+        	var css;
+        	
+	        if (document.URL.charAt(document.URL.indexOf('?') + 4) == 'c') {
+	        	css = "css/camping.css";
+	        }
+	        else {
+	        	css = "css/refugio.css";
+	        }
+	        
+	        var link = document.createElement("link");
+			link.href = css;
+			link.type = "text/css";
+			link.rel = "stylesheet";
+			document.getElementsByTagName("head")[0].appendChild(link);
+	       
+		</script>
+        
+	    
+	    <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Open+Sans' rel='stylesheet' type='text/css'>
+
+    </head>
+
+	<body>
+	    
+	    <img class="fondoNegro" src="img/fondo_negro.png" />
+		    
+		<div class="container">
+		    
+    		<div class="navegador">
+    		    
+    		    <div class="logo"><img src="img/logo-pirineos2.png"/></div>
+    		    
+    			<label for="show-menu" class="show-menu">Menú</label>
+    			<input type="checkbox" id="show-menu" role="button">
+    			
+    			<ul id="menu">
+    			    
+    				<li><a href="home.html">Home</a></li>
+    				<li><a href="rutas.html">Rutas</a></li>
+    				
+    				<li class="visible">
+    				    
+    					<a href="#">Alojamiento ￬</a>
+    					
+    					<ul class="hidden">
+    						<li><a href="alojamiento.html?id=camping">Camping</a></li>
+    						<li><a href="alojamiento.html?id=refugio" id="refugio">Refugio</a></li>
+    					</ul>
+    					
+    				</li>
+    				
+    				<li class="escondido"><a href="alojamiento.html?id=camping">Camping</a></li>
+    				<li class="escondido"><a href="alojamiento.html?id=refugio">Refugio</a></li>
+    				
+    			</ul>
+    			
+    		</div>
+		
+    		<div class="leftContainer">
+    		    
+    		    <div class="redesSociales">
+    		        
+    		        <p>Síguenos</p>
+    		        
+    		        <div class="imgRedes">
+    		            
+    		            <img src="img/facebook.png" />
+    		            <img src="img/google+.png" />
+    		            <img src="img/twitter.png" />
+    		            
+    		        </div>
+    		        
+    		    </div>
+    		    
+    		    <div class="calendario">
+    		    	
+    		    	<p>Disponibilidad</p>
+    		        <img src="img/calendario.png" />
+    		        
+    		    </div>
+
+                <div class="logoAlbergue">
+
+                    <img src="img/albergues.png" />
+
+                </div>
+    		    
+    		    <div class="datosContacto">
+    		    	
+    		    	<p>Dirección: Calle del Ladrón 23</p>
+    		    	<p>Teléfono: 123456789</p>
+    		    	<p>Email: wendel.mandanga@gmail.com</p>
+    		    	
+    		    </div>
+    		    
+    		</div>
+    		
+    		<div class="separator">
+    			
+    		</div>
+    		
+    		<div class="rightContainer">
+    			
+    			<div class="about">
+    				
+	    			<p class="titulo">Camping Peio</p>
+	    			<p>Situados en un íntimo rincón del Pirineo Aragonés y rodeados de unas vistas 
+	    			inmejorables, contamos con un clima soleado durante gran parte del año.</p>
+	    			
+    		    </div>
+    		    
+    		    <div class="caracteristicas">
+    		    	
+    		    	<p class="titulo">Características</p>
+    		    	
+    		    	<ul class="lista">
+    		    		
+    		    		<li>· Oferta variada de bungalows</li>
+    		    		<li>· 150 parcelas para tiendas</li>
+    		    		<li>· Aseos comunes</li>
+    		    		<li>· Piscina con socorrista</li>
+    		    		<li>· Alquiler de bicicletas</li>
+    		    		
+    		    	</ul>
+    		    	
+    		    </div>
+    		    
+    		    <div class="imagenes">
+    		    	
+					<a href="#img1"><img src="img/camping1.jpg"></a>
+					<a href="#img2"><img src="img/camping2.png"></a>
+					<a href="#img3"><img src="img/camping3.jpg"></a>
+					
+					<a href="#_" class="lightbox" id="img1"><img src="img/camping1.jpg"></a>
+					<a href="#_" class="lightbox" id="img2"><img src="img/camping2.png"></a>
+					<a href="#_" class="lightbox" id="img3"><img src="img/camping3.jpg"></a>
+    		    	
+    		    </div>
+
+                <div class="albergueAbout">
+                        
+                    <p class="titulo">Albergue Koxme</p>
+                    <p>Situados en un íntimo rincón del Pirineo Aragonés y rodeados de unas vistas 
+                    inmejorables, contamos con un clima soleado durante gran parte del año.</p>
+                        
+                </div>
+
+                <div class="albergueCaracteristicas">
+                    
+                    <p class="titulo">Características</p>
+                    
+                    <ul class="lista">
+                        
+                        <li>· Wifi gratuita</li>
+                        <li>· Desayunos incluidos</li>
+                        <li>· Aseos comunes</li>
+                        <li>· Cocina comunitaria</li>
+                        <li>· Menu del día</li>
+                        
+                    </ul>
+                    
+                </div>
+
+                <div class="albergueImagenes">
+                    
+                    <a href="#img4"><img src="img/albergue1.png"></a>
+                    <a href="#img5"><img src="img/albergue2.png"></a>
+                    <a href="#img6"><img src="img/albergue3.png"></a>
+                    
+                    <a href="#_" class="lightbox" id="img4"><img src="img/albergue1.png"></a>
+                    <a href="#_" class="lightbox" id="img5"><img src="img/albergue2.png"></a>
+                    <a href="#_" class="lightbox" id="img6"><img src="img/albergue3.png"></a>
+                    
+                </div>
+                    
+                <div>
+
+            </div>
+    		
+		</div>
+		
+		<footer class="footer">
+			
+		  <p>Copyright &copy; 2014</p>
+			
+		</footer>
+		
+	</body>
+	
+</html>

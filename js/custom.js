@@ -9,7 +9,7 @@ $(document).ready(function(){
         slideTrackerID: 'slideposition', // The name of the UL that tracks the slides
         slideOnInterval: true, // Slide on interval
         interval: 6000, // Interval to slide on if slideOnInterval is enabled
-        animateDuration: 2500, // Duration of an animation
+        animateDuration: 2000, // Duration of an animation
         animationEasing: 'ease', // Accepts: linear ease in out in-out snap easeOutCubic easeInOutCubic easeInCirc easeOutCirc easeInOutCirc easeInExpo easeOutExpo easeInOutExpo easeInQuad easeOutQuad easeInOutQuad easeInQuart easeOutQuart easeInOutQuart easeInQuint easeOutQuint easeInOutQuint easeInSine easeOutSine easeInOutSine easeInBack easeOutBack easeInOutBack
         pauseOnHover: false // Pause when user hovers the slide container
     };
