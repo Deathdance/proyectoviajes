@@ -1,3 +1,7 @@
+/**********/
+/* Global */
+/**********/
+
 html,body{
 	margin: 0;
 	padding: 0;
@@ -26,6 +30,9 @@ h1 {
 	color:#222222;
 }
 
+/******************************/
+/* Header Logo y Boton Entrar */
+/******************************/
 header#top{
 	position: fixed;
 	top: 0;
@@ -53,6 +60,9 @@ header#top #logo{
 	text-shadow: 0 0 15px rgba(0,0,0,0.5);
 }
 
+/**********/
+/* Slider */
+/**********/
 .pagewrap{
 	height: 100%;
 }
@@ -61,7 +71,7 @@ header#top #logo{
 	width: 100%;
 }
 
-.pagewrap .copy{
+.pagewrap .autores{
 	font-size: 10px;
 	bottom: 20px;
 	left: 30px;
@@ -70,7 +80,7 @@ header#top #logo{
 	color: white;
 }
 
-.pagewrap .copy a,.pagewrap .copy a:hover{
+.pagewrap .autores a,.pagewrap .autores a:hover{
 	color: white;
 } 
 
@@ -178,6 +188,9 @@ header#top #logo{
 	padding: 10px 15px;
 }
 
+/*********************/
+/* UL de los Slides  */
+/*********************/
 .pageblock#fullscreen #slideposition{
 	position: absolute;
 	bottom: 50px;
@@ -207,11 +220,4 @@ header#top #logo{
 
 .pageblock#fullscreen #slideposition ul li.indicator.active{
 	background: white;
-}
-.presentacionimagenes{
-	border-color: white;
-	border-style:ridge;
-	text-align: left;
-	padding:5px;
-	padding-top:12px;
 }
