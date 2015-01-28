@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+	<head background="images/granbazar.jpg">
+		<meta charset="utf-8" />
+		<title>Diario de viajes</title>
+		<link rel="stylesheet" href="main.css" />
+	</head>
+<body>
+<header id="top_header">
+		<img id="imgcabecera" src="images/hanged-bridge-in-the-jungle-wide.jpg" />
+</header>
+				
+			<section id="main_section">
+				<div>
+					<ul class="menu">
+						<li>Nuevo diario</li>
+						<br>
+						<li>Buscar diario</li>
+						<br>
+						<li>Fotos y videos</li>
+						<br>
+						<li>Mis diarios</li>
+						<br>
+						<li>Perfil</li>	
+					</ul>
+				</div>
+
+				<div id="cuerpo">
+					<form>
+						<div class="formizq"> 
+						<p>Nombre</p>
+							<input id="nombre" type="text" name="username" placeholder="usuario"/>
+						
+						<p>Apellido</p>
+							<input id="apellido" type="text" name="apellido" placeholder="apellido"/>
+
+						<p>Segundo apellido</p>
+							<input id="segundoapellido" type="text" name="segundoapellido" placeholder="segundo apellido"/>
+						
+							<br>
+						<p>
+							<textarea name="Breve descripción personal" rows="3" cols="50" ></textarea>
+							<br>
+							<input onclick="guardar()" type="submit" value="Guardar cambios" />
+						<p>
+						</div>
+						<br>
+						<div class="formderecha">
+						<p>Email</p>
+							<input id="email" type="text" name="email" placeholder="email"/>
+						
+						<p>Contraseña antigua</p>
+							<input id="contvieja" type="text" name="contvieja" placeholder="contraseña antigua"/>
+	
+						<p>Contraseña nueva</p>
+							<input id="contnueva" type="text" name="contnueva" placeholder="contraseña nueva"/>
+						</div>
+						<div class="foto">
+								<img id="imagenprofile" src="images/profile.png">
+							<input onclick="cambiar()" type="submit" value="Cambiar foto" />
+						</div>
+					</form>
+				</div>
+						
+
+
+			</section>
+	
+			<footer id="the_footer">
+			<br>
+			Copyright © Gorka-Xabi-Josu 2015
+			</footer>
+</body>
+</html>
