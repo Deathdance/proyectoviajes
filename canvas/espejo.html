@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <title>Canvas/Slider</title>
+    <link href="espejo.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="sliCanvas.js"></script>
+  </head>
+  <body onload="comenzar()">
+
+   <div id="slider"> 
+        <input type="radio" id="control1" name="controls" checked="checked"/>
+        <label for="control1"></label>
+        <input type="radio" id="control2" name="controls"/>
+        <label for="control2"></label>
+        <div id="sliderinner">
+            <ul>
+                <li>
+                    <video controls="" height="270" width="480">
+       					 <source src="video02.mp4" type="video/mp4"></source>
+     				 </video>
+                </li>
+                <li>
+                    <video controls="" height="270" width="480">
+        				<source src="video01.mp4" type="video/mp4">
+      				</video> 
+                </li>
+            </ul>
+        </div>
+    </div><!--slider-->
+  
+    <p>
+      <canvas width="1000" height="400"> </canvas>
+      <canvas id="espejo" width="320" height="160"></canvas>
+    </p>
+    
+    
+</body>
+</html>
