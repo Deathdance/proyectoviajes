@@ -1,83 +1,59 @@
 <!doctype html>
 <html lang="es">
-	<head background="../images/granbazar.jpg">
+	<head>
 		<meta charset="utf-8" />
 		<title>Diario de viajes</title>
 		<link rel="stylesheet" href="../css/main.css" />
 	</head>
 <body>
-<header id="top_header">
-		<img id="imgcabecera" src="../images/hanged-bridge-in-the-jungle-wide.jpg" />
-</header>
-			<section class="menu">
-				<div class="submenu">
-					<div>
-	                	<input type="text" placeholder="Username" required="" id="username" name="username"/>
-	            	</div>
-	            	<div>
-	            		<input type="password" placeholder="Password" required="" id="password" name="password"/>
-	            	</div>
-					<div class="logires">
-						<input id="log" type="submit" class="btn2" value="Login" />
-						<a class="btn2"  href="registro.html" target="_self">Register</a>
-					</div>
-				</div>
-				<div class="submenu2">
-						<div class="linea1">
-						<a class="btn" href="info.html" target="_self">Home</a>
-						<a class="btn" href="perfil.html" target="_self">Perfil</a>
+	<header id="top_header">
+			<h1>Tip 2 Trip</h1>
+				<section class="menu">
+						<div class="submenu">
+							<span><a href="info.html" target="_self">Home</a></span>
+							<span><a href="perfil.html" target="_self">Perfil</a></span>
+							<span><a href="info.html" target="_self">Nuevo diario</a></span>
+							<span><a href="info.html" target="_self">Mis diarios</a></span>
+							<span><a href="fotosvideos.html" target="_self">Fotos y videos</a></span>
+							<span>
+			                	<input type="text" placeholder="Username" required="" id="username" name="username"/>
+			            	</span>
+			            	<span>
+			            		<input type="password" placeholder="Password" required="" id="password" name="password"/>
+			            	</span>
+							<span>
+								<input id="log" type="submit" class="btn" value="Login" />
+							</span>
+							<span><a class="btn"  href="registro.html" target="_self">Register</a></span>
 						</div>
-						<br>
-						<div class="linea2">
-						<a class="btn" href="info.html" target="_self">Nuevo diario</a>
-						<a class="btn" href="info.html" target="_self">Mis diarios</a>
-						</div>
-						<br>
-						<div class="linea3">
-						<a class="btn" href="fotosvideos.html" target="_self">Fotos y videos</a>	
-						</div>
-				</div>
-			</section>
+				</section>	
+	</header>
 			<section id="main_section">
 				<div id="cuerpo">
 					<form>
-						<div class="formizq"> 
-						<p>Nombre</p>
+						<span class="formizq"> 
+						Nombre<br>
 							<input id="nombre" type="text" name="username" placeholder="usuario"/>
 						
-						<p>Apellido</p>
+						<br>Apellido<br>
 							<input id="apellido" type="text" name="apellido" placeholder="apellido"/>
 
-						<p>Segundo apellido</p>
+						<br>Segundo apellido<br>
 							<input id="segundoapellido" type="text" name="segundoapellido" placeholder="segundo apellido"/>
 						
-							<br>
-						<p>
-							<textarea name="Breve descripción personal" rows="3" cols="50" ></textarea>
-							<br>
-							<input onclick="guardar()" type="submit" value="Guardar cambios" />
-						<p>
-						</div>
-						<br>
-						<div class="formderecha">
-						<p>Email</p>
+						<br>Email<br>
 							<input id="email" type="text" name="email" placeholder="email"/>
 						
-						<p>Contraseña antigua</p>
+						<br>Contraseña antigua<br>
 							<input id="contvieja" type="text" name="contvieja" placeholder="contraseña antigua"/>
 	
-						<p>Contraseña nueva</p>
+						<br>Contraseña nueva<br>
 							<input id="contnueva" type="text" name="contnueva" placeholder="contraseña nueva"/>
-						</div>
-						<div class="foto">
-								<img id="imagenprofile" src="../images/profile.png">
-							<input onclick="cambiar()" type="submit" value="Cambiar foto" />
-						</div>
+						<br>
+						<input id="guardar" type="submit" value="Guardar cambios" />
+						</span>
 					</form>
 				</div>
-						
-
-
 			</section>
 	
 			<footer id="the_footer">

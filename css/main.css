@@ -1,9 +1,10 @@
 html{
 	background-image:url("https://proyectoviajes-deathdance.c9.io/images/cafe-veranda.jpg");
-	background-size: 100%;
+	background-size: 120%;
 }
 h1{
-	padding-top: 5px;
+	margin-top: 5px;
+	padding-top: -5px;
 	font: solid 10px Helvetica;
 	font-size: 50px;
 	color: white;
@@ -31,7 +32,7 @@ h1{
 	top:0;
 	left:0;
 	width:100%; 
-	height:100px;
+	height:80px;
 	background-color:rgba(0,0,0,0.7);
 }
 
@@ -86,47 +87,28 @@ h1{
 	text-align: center;
 	color: white;
 	width:100%;
-	height:50px;
+	height:25px;
 	position:absolute;
+	font-size: 8px;
 	bottom:0;
 	left:0;
 	background-color:rgba(0,0,0,0.7);
 }
 
 #cuerpo{
+	margin-left: 45px;
 	display: left;
-	padding-left: -50px;
+	padding-left: -90px;
 	text-align: justify;
 	padding-right: 50px;
 }
-.formderecha{
-	position: absolute;
-	right: 430px;
-	top: 225px;
+#cuerpo input{
+	margin-top: -5px;
+	padding-top: -5px;
+	height: 14px;
 }
-.foto{
-	position: absolute;
-	right: 180px;
-	top: 425px;
-}
-#imagenprofile{
-	width: 60px;
-	height: 100px;
-	position: absolute;
-	right: 35px;
-	top: -120px;
-}
-@media screen and (max-width: 1150px){
-	#imagenprofile{
-		position: absolute;
-		right: 20px;
-		top:-120px;
-	}
-	.formderecha{
-		position: relative;
-		top:0px;
-		right: 0px;
-	}
+#guardar{
+	height: 48px;
 }
 @media screen and (max-width: 1024px){
 	#main_section{
@@ -144,7 +126,7 @@ h1{
 		max-width: 80%;
 	}
 	.menu{
-		margin: -3% auto auto auto;
+		margin: -1.7% auto auto auto;
 		background-color:rgba(0,0,0,0.7);
 		border-top: solid 1px #909090;
 		height: 40px;
@@ -157,4 +139,16 @@ h1{
 		font-size: 14px;
 		font-weight:bold;
 	}
+}
+@media screen and (max-width: 600px){
+	html{
+		background-image:url("https://proyectoviajes-deathdance.c9.io/images/madera.jpg");
+		background-size: 120%;
+		}
+}
+@media screen and (max-width: 351px){
+	html{
+		background-image:url("https://proyectoviajes-deathdance.c9.io/images/europa.jpg");
+		background-size: 120%;
+	}	
 }
