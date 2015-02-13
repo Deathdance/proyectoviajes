@@ -1,173 +1,7 @@
-html{
-	background-image:url("https://proyectoviajes-deathdance.c9.io/images/cafe-veranda.jpg");
-	background-size: 120%;
-}
-body{
-	text-align:center;
-}
-h1{
-	padding-top: 5px;
-	font: solid 10px Helvetica;
-	font-size: 50px;
-	color: white;
-	text-align: left;
-}
-#log{
-	cursor: pointer;
-	font: Helvetica;
-    font-weight:bold;
-    color:white;
-    background: none;
-    border:0px;
-    width:80px;
-    height:19px;
-}
-#log:hover{
-	background-color: #909090;
-}
-.span{
-	display: inline-block;
-	text-decoration: none;
-}
-#top_header{
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%; 
-	height:100px;
-	background-color:rgba(0,0,0,0.7);
-}
-
-.menu{
-	background: red;
-}
-.menu a{
-	margin-right: 15px;
-	text-decoration: none;
-	padding: 10px;
-	color: white;
-}
-.menu a:hover{
-	background-color: #909090;
-	border-radius: 5px;
-}
-.submenu{
-	float: right;
-	display: inline-block;
-	text-align: center;
-}
-.submenu input{
-	height: 22px;
-	border-radius: 5px;
-}
-#log{
-	width: 80px;
-	height: 39px;
-}
-#cuerpo{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-left: 160px;
-	margin-right: 10px;
-}
-
-#main_section{
-	position: relative;
-	margin: 10% auto 0% auto;
-	width: 90%;
-	border-radius: 25px;
-	display: -webkit-box;
-	-webkit-box-orient: horizotal;
-	-webkit-box-pack: left;
-	-webkit-box-align: left;
-	background-color:rgba(30,30,30,0.8);
-	color: white;
-	font-size: 20px;
-	max-width: 80%;
-}
-#the_footer{
-	text-align: center;
-	color: white;
-	width:100%;
-	height:25px;
-	position:absolute;
-	font-size: 8px;
-	bottom:0;
-	left:0;
-	background-color:rgba(0,0,0,0.7);
-}
-
-#cuerpo{
-	display: left;
-	padding-left: -50px;
-	text-align: justify;
-	padding-right: 50px;
-}
-.formderecha{
-	position: absolute;
-	right: 430px;
-	top: 225px;
-}
-.foto{
-	position: absolute;
-	right: 180px;
-	top: 425px;
-}
-#imagenprofile{
-	width: 60px;
-	height: 100px;
-	position: absolute;
-	right: 35px;
-	top: -120px;
-}
-@media screen and (max-width: 1150px){
-	#imagenprofile{
-		position: absolute;
-		right: 20px;
-		top:-120px;
-	}
-	.formderecha{
-		position: relative;
-		top:0px;
-		right: 0px;
-	}
-}
-@media screen and (max-width: 1024px){
-	#main_section{
-		position: relative;
-		margin: 18% auto 10% auto;
-		width: 90%;
-		border-radius: 25px;
-		display: -webkit-box;
-		-webkit-box-orient: horizotal;
-		-webkit-box-pack: left;
-		-webkit-box-align: left;
-		background-color:rgba(30,30,30,0.8);
-		color: white;
-		font-size: 13px;
-		max-width: 80%;
-	}
-	.menu{
-		margin: -3% auto auto auto;
-		background-color:rgba(0,0,0,0.7);
-		border-top: solid 1px #909090;
-		height: 40px;
-	}
-	.menu a{
-		margin-right: 15px;
-		text-decoration: none;
-		padding: 10px;
-		color: white;
-		font-size: 14px;
-		font-weight:bold;
-	}
-
-}
-header,section,nav{
+nav{
 	display:block;
 }
-
-	#skin{
+#skin{
 	width: 700px;
 	height: 300px;
 	margin: 10px auto;
@@ -177,8 +11,6 @@ header,section,nav{
 	border-radius: 10px;
 }
 
-
-
 nav{
 	margin: 5px 0px;
 }
@@ -186,6 +18,7 @@ nav{
 	float: left;
 	width:70px;
 	height: 22px;
+	margin-left: 30px;
 }
 #defaultBar{
 	position: relative;
@@ -203,4 +36,26 @@ nav{
 	width:0px;
 	height: 8px;
 	background:#3D3A3A;
+}
+#myMovie{
+	margin: 6px;
+	width: 98%;
+	height: 80%;
+}
+@media screen and (max-width: 600px){
+	
+	#skin{
+		width: 100%;
+	}
+	#defaultBar{
+		float: right;
+		width: 75%;
+		margin-top: -18px;
+
+	}
+	#buttons{
+		width:70px;
+		height: 22px;
+		margin-left: 15px;
+	}
 }

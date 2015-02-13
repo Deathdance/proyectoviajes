@@ -35,12 +35,8 @@ h1{
 	height:80px;
 	background-color:rgba(0,0,0,0.7);
 }
-
-.menu{
-	background: red;
-}
 .menu a{
-	margin-right: 15px;
+	margin-left: 65px;
 	text-decoration: none;
 	padding: 10px;
 	color: white;
@@ -88,13 +84,12 @@ h1{
 	color: white;
 	width:100%;
 	height:25px;
-	position:absolute;
+	position:fixed;
 	font-size: 8px;
 	bottom:0;
 	left:0;
 	background-color:rgba(0,0,0,0.7);
 }
-
 #cuerpo{
 	margin-left: 45px;
 	display: left;
@@ -107,8 +102,10 @@ h1{
 	padding-top: -5px;
 	height: 14px;
 }
-#guardar{
-	height: 48px;
+img{
+	margin-top: 5px;
+	height: 300px;
+	width: 380px;
 }
 @media screen and (max-width: 1024px){
 	#main_section{
@@ -132,23 +129,79 @@ h1{
 		height: 40px;
 	}
 	.menu a{
-		margin-right: 15px;
+		margin-left: 15px;
 		text-decoration: none;
 		padding: 10px;
 		color: white;
 		font-size: 14px;
 		font-weight:bold;
 	}
+	.derecha{
+		float: right;
+		margin: -35% auto auto 117%;
+	}
+	.izkierda{
+		margin-left: 20px;
+	}
+	#cuerpo input#guardar{
+		height: 25px;
+	}
 }
 @media screen and (max-width: 600px){
 	html{
 		background-image:url("https://proyectoviajes-deathdance.c9.io/images/madera.jpg");
 		background-size: 120%;
-		}
-}
-@media screen and (max-width: 351px){
-	html{
-		background-image:url("https://proyectoviajes-deathdance.c9.io/images/europa.jpg");
-		background-size: 120%;
-	}	
+	}
+	#main_section{
+		position: relative;
+		margin: 30% auto 10% auto;
+		width: 90%;
+		border-radius: 25px;
+		display: -webkit-box;
+		-webkit-box-orient: horizotal;
+		-webkit-box-pack: left;
+		-webkit-box-align: left;
+		background-color:rgba(30,30,30,0.8);
+		color: white;
+		font-size: 13px;
+		max-width: 80%;
+	}
+	.menu{
+		margin: -3% auto auto auto;
+		background-color:rgba(0,0,0,0.7);
+		border-top: solid 1px #909090;
+		height: 40px;
+	}
+	.menu a{
+		margin: 10px 10px auto -16px;
+		text-decoration: none;
+		padding-top: 12px;
+		color: white;
+		font-size: 10px;
+		font-weight:bold;
+	}
+	.menu a:hover{
+		background-color: #909090;
+		border-radius: 5px;
+	}
+	.submenu input{
+		height: 18px;
+		width: 80px;
+		border-radius: 5px;
+	}
+	#log{
+		cursor: pointer;
+		font: Helvetica;
+	    font-weight:bold;
+	    color:white;
+	    background: none;
+	    border:0px;
+	    width: 45px;
+	    height: 35px;
+	    font-size: 9px;
+	}
+	.derecha{
+		float: right;
+		margin: -68% auto auto 117%;
+	}
 }

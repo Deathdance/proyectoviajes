@@ -4,7 +4,6 @@
     <title>Registro</title>
 
     <!-- Stylesheet -->
-	<link href="../css/registro.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../css/bootstrap.css"/>
     <link rel="stylesheet" href="../css/formValidation.css"/>
 
@@ -59,27 +58,6 @@
                     </div>
 
                     <div class="form-group">
-                        <label class="col-sm-3 control-label">Género</label>
-                        <div class="col-sm-6">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gender" value="male" /> Hombre
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gender" value="female" /> Mujer
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="gender" value="other" /> Otro
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
                         <label class="col-sm-3 control-label" id="captchaOperation"></label>
                         <div class="col-sm-2">
                             <input type="text" class="form-control" name="captcha" />
@@ -100,9 +78,8 @@
                         <div class="col-sm-9 col-sm-offset-3">
                             <button type="submit" class="btn btn-primary" name="signup" value="Sign up">Aceptar</button>
                             <!--<a href="index.html"><img width="50px" height="50px" src="images/casa.png"><i class="fa fa-home fa-3x"></i></a>-->
-                        </div>
-                        <div class="etxe">
-                                    <a href="../index.html"><i class="fa fa-home fa-3x"></i></a>
+                            <a href="../index.html" class="etxe"><i class="fa fa-home fa-2x"></i></a>
+                            <a href="../index.html" class="etxe"><i class="fa fa-twitter fa-2x"></i></a>
                         </div>
                     </div>
                 </form>
@@ -177,13 +154,6 @@ $(document).ready(function() {
                     different: {
                         field: 'username',
                         message: 'La contraseña no puede ser la misma que el usuario'
-                    }
-                }
-            },
-            gender: {
-                validators: {
-                    notEmpty: {
-                        message: 'Se requiere elegir género'
                     }
                 }
             },
