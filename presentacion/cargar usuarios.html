@@ -1,0 +1,20 @@
+//se utiliza la sinaxis de ejs para escribir los datos obtenidos en la parte servidor
+ <% 
+            //por cada elemento del objeto que llega desde el servidor
+            for(var i=0; i<supplies.length; i++) {%>
+            
+	//un formulario para borrar. Sale en cada línea el nombre de la Select (un usuario) y un botón de borrar que al clicker a su vez hará una request mediante /borrarU
+               <form action="/borrarU" method="post">
+//'supplies[i] tiene el nombre de usuario
+                <li>Borrar a: <button type="submit"><%= supplies[i] %></button> </li>
+//con este input hidden con value supplies[i] se puede pasar el valor (nombre de usuario) del botón que estamos clikando para saber que usuario es el seleccionado
+                <input type="hidden" name="idusuario" value="<%= supplies[i] %>">
+                </form>
+
+//igual que en el formulario de arriba con algo adicional: se ponen 2 hidden para guardar en nombre de usuario “real” para la edición, ya que al editarlo desde esta parte al servidor llegaría el nombre ya editado y por lo tanto al hacer la update no encontraría el usuario
+                <form action="/editUser" method="post">
+                    <input type="text" name="editNew" value="<%= supplies[i] %>">
+                    <button type="submit">Editar</button>
+                    <input type="hidden" name="editOld" value="<%= supplies[i] %>">
+                </form>
+            <% } 
